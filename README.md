@@ -15,7 +15,7 @@ Clone and start the containers using the command below on your terminal.
 **Windows users**: please setup WSL and a local Ubuntu Virtual machine following [the instructions here](https://documentation.ubuntu.com/wsl/stable/howto/install-ubuntu-wsl2/#what-you-will-learn) until you get an ubuntu prompt.
 
 ```bash
-git clone 
+git clone https://github.com/josephmachado/data_storage_pattern.git
 docker compose up --build -d 
 sleep 30
 ```
