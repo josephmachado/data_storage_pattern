@@ -16,6 +16,7 @@ Clone and start the containers using the command below on your terminal.
 
 ```bash
 git clone https://github.com/josephmachado/data_storage_pattern.git
+cd data_storage_pattern
 docker compose up --build -d 
 sleep 30
 ```
