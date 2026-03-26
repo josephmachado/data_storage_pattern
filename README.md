@@ -23,6 +23,7 @@ sleep 30
 * Open data storage pattern code notebook at **[storage_patterns.ipynb](http://localhost:8888/lab/tree/storage_patterns.ipynb)**
 * Open Spark History Server at **[http://localhost:18080/](http://localhost:18080/)**
 * Open Spark UI at **[http://localhost:4040/](http://localhost:4040/)**, and upto 4049 port (one SparkSessions UI per port from 4040 to 4049)
+* Open Minio at **[http://localhost:9001](http://localhost:9001)** with `admin` and `password` as username and password.
 
 Once done, stop containers with
 
