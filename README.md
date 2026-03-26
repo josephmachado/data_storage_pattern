@@ -1,3 +1,7 @@
+# Data Storage Patterns for Data Warehouse 
+
+Code for Blog at **[Coming Soon](https://www.startdataengineering.com/)**
+
 ## Setup 
 
 **Prerequisites**:
