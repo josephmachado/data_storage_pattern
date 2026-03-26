@@ -5,17 +5,22 @@
 1. [docker](https://docs.docker.com/engine/install/) & [docker compose](https://docs.docker.com/compose/)
 2. Atleast 4GB (preferably 8GB or more) memory
 
-Start the container by opening a terminal in the downloaded project folder and starting the containers
+
+Clone and start the containers using the command below on your terminal.
+
+**Windows users**: please setup WSL and a local Ubuntu Virtual machine following [the instructions here](https://documentation.ubuntu.com/wsl/stable/howto/install-ubuntu-wsl2/#what-you-will-learn) until you get an ubuntu prompt.
 
 ```bash
-
+git clone 
 docker compose up --build -d 
 sleep 30
 ```
 
-Open Jupyter lab at **[http://localhost:8888/lab/](http://localhost:8888/lab/)**.
+* Open data storage pattern code notebook at **[storage_patterns.ipynb](http://localhost:8888/lab/tree/storage_patterns.ipynb)**
+* Open Spark History Server at **[http://localhost:18080/](http://localhost:18080/)**
+* Open Spark UI at **[http://localhost:4040/](http://localhost:4040/)**, and upto 4049 port (one SparkSessions UI per port from 4040 to 4049)
 
-Stop containers with
+Once done, stop containers with
 
 ```bash
 docker compose down -v
@@ -28,24 +33,3 @@ sudo rm -rf ./notebooks/data/*
 ### MinIO
 This course uses [MinIO](https://min.io) for object storage demonstrations. MinIO is open source software licensed under GNU AGPL v3.
 
-### Stack Overflow Dataset
-This course uses the Stack Overflow dataset for examples and exercises.
-
-**Dataset:** Stack Overflow questions and answers  
-**Source:** [ClickHouse Example Datasets](https://clickhouse.com/docs/getting-started/example-datasets/stackoverflow)  
-**Original Data:** © Stack Exchange Inc.  
-**License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)  
-
-The Stack Overflow data is user-contributed content from the Stack Exchange network, made available under the Creative Commons Attribution-ShareAlike 4.0 International License.
-
-**Note** 
-Code archived with 
-
-```bash
-zip -r archive.zip . \
-  -x "*.git/*" -x ".git/*" \
-  -x "*.minio.sys/*" -x ".minio.sys/*" \
-  -x "*.Trash-*/*" -x ".Trash-*/*" \
-  -x "*.ipynb_checkpoints/*" -x ".ipynb_checkpoints/*" \
-  -x "*__pycache__/*" -x "__pycache__/*"
-```
