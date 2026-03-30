@@ -1,6 +1,6 @@
 # Data Storage Patterns for Data Warehouse 
 
-Code for Blog at **[Coming Soon](https://www.startdataengineering.com/)**
+Code for **[3 Data Storage Techniques Every Data Engineer Should Know](https://www.startdataengineering.com/post/data-storage-pattern-rule-of-thumb/)** post.
 
 ## Setup 
 
